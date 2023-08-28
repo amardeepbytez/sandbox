@@ -1,30 +1,26 @@
 var theme = {
   init: function() {
-    theme.offCanvas();
+    theme.stickyHeader();
   },
-  offCanvas: () => {
+  stickyHeader: () => {
     var navbar = document.querySelector(".navbar");
     if (navbar == null) return;
-    const navOffCanvasBtn = document.querySelectorAll(".offcanvas-nav-btn");
-    const navOffCanvas = document.querySelector('.navbar:not(.navbar-clone) .offcanvas-nav');
-    const bsOffCanvas = new bootstrap.Offcanvas(navOffCanvas, {scroll: true});
-    const scrollLink = document.querySelectorAll('.onepage .navbar li a.scroll');
-    const searchOffcanvas = document.getElementById('offcanvas-search');
-    navOffCanvasBtn.forEach(e => {
-      e.addEventListener('click', event => {
-        bsOffCanvas.show();
-      })
-    });
-    scrollLink.forEach(e => {
-      e.addEventListener('click', event => {
-        bsOffCanvas.hide();
-      })
-    });
-    if(searchOffcanvas != null) {
-      searchOffcanvas.addEventListener('shown.bs.offcanvas', function () {
-        document.getElementById("search-form").focus();
-      });
-    }
-  },
+    var options = {
+      offset: 350,
+      offsetSide: 'top',
+      classes: {
+        clone: 'navbar-clone fixed',
+        stick: 'navbar-stick',
+        unstick: 'navbar-unstick',
+      },
+      onStick: function() {
+        var navbarClonedClass = this.clonedElem.classList;
+        if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
+          this.clonedElem.className = this.clonedElem.className.replace("navbar-dark","navbar-light");
+        }
+      }
+    };
+    var banner = new Headhesive('.navbar', options);
+  }
 }
 theme.init();
