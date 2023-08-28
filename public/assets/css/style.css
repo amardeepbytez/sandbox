@@ -23640,25 +23640,25 @@ hr.dark {
   background: rgba(var(--bs-primary-rgb), 0.7);
   color: var(--bs-white);
 }
-a {
+Link {
   transition: all 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  a {
+  Link {
     transition: none;
   }
 }
-a:focus {
+Link:focus {
   outline: 0;
 }
-a[href^=tel] {
+Link[to^=tel] {
   color: inherit;
   text-decoration: inherit;
 }
-a.hover {
+Link.hover {
   position: relative;
 }
-a.hover::before {
+Link.hover::before {
   position: absolute;
   width: 100%;
   height: 1px;
@@ -23667,23 +23667,23 @@ a.hover::before {
   left: 0;
   pointer-events: none;
 }
-a.hover::before {
+Link.hover::before {
   content: "";
   transform-origin: 100% 50%;
   transform: scale3d(0, 1, 1);
   transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
-a.hover:hover:before {
+Link.hover:hover:before {
   transform-origin: 0% 50%;
   transform: scale3d(1, 1, 1);
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
-a.hover-2 {
+Link.hover-2 {
   position: relative;
   z-index: 1;
   padding: 0 0.2rem 0.05rem;
 }
-a.hover-2::before {
+Link.hover-2::before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -23693,27 +23693,27 @@ a.hover-2::before {
   pointer-events: none;
   z-index: -1;
 }
-a.hover-2::before {
+Link.hover-2::before {
   content: "";
   transform-origin: 100% 50%;
   transform: scale3d(0, 1, 1);
   transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
 }
-a.hover-2:hover.link-body {
+Link.hover-2:hover.link-body {
   color: inherit;
 }
-a.hover-2:hover:before {
+Link.hover-2:hover:before {
   transform-origin: 0% 50%;
   transform: scale3d(1, 1, 1);
   transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
 }
-a.hover-3 {
+Link.hover-3 {
   position: relative;
   padding: 0 0.2rem 0.05rem;
   transition: color ease 0.3s;
   z-index: 1;
 }
-a.hover-3:before {
+Link.hover-3:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -23724,135 +23724,135 @@ a.hover-3:before {
   background-color: var(--bs-pale-primary);
   transition: all 0.3s ease-in-out;
 }
-a.hover-3:hover.link-body {
+Link.hover-3:hover.link-body {
   color: inherit;
 }
-a.hover-3:hover:before {
+Link.hover-3:hover:before {
   height: calc(100% + 6px);
 }
-a.hover-3.more:before {
+Link.hover-3.more:before {
   bottom: -1px;
 }
-a.hover-3.more:hover:before {
+Link.hover-3.more:hover:before {
   height: calc(100% + 3px);
 }
-a.hover-2.link-blue:before {
+Link.hover-2.link-blue:before {
   background: var(--bs-blue);
 }
-a.hover-2.link-sky:before {
+Link.hover-2.link-sky:before {
   background: var(--bs-sky);
 }
-a.hover-2.link-purple:before {
+Link.hover-2.link-purple:before {
   background: var(--bs-purple);
 }
-a.hover-2.link-grape:before {
+Link.hover-2.link-grape:before {
   background: var(--bs-grape);
 }
-a.hover-2.link-violet:before {
+Link.hover-2.link-violet:before {
   background: var(--bs-violet);
 }
-a.hover-2.link-pink:before {
+Link.hover-2.link-pink:before {
   background: var(--bs-pink);
 }
-a.hover-2.link-fuchsia:before {
+Link.hover-2.link-fuchsia:before {
   background: var(--bs-fuchsia);
 }
-a.hover-2.link-red:before {
+Link.hover-2.link-red:before {
   background: var(--bs-red);
 }
-a.hover-2.link-orange:before {
+Link.hover-2.link-orange:before {
   background: var(--bs-orange);
 }
-a.hover-2.link-yellow:before {
+Link.hover-2.link-yellow:before {
   background: var(--bs-yellow);
 }
-a.hover-2.link-green:before {
+Link.hover-2.link-green:before {
   background: var(--bs-green);
 }
-a.hover-2.link-leaf:before {
+Link.hover-2.link-leaf:before {
   background: var(--bs-leaf);
 }
-a.hover-2.link-aqua:before {
+Link.hover-2.link-aqua:before {
   background: var(--bs-aqua);
 }
-a.hover-2.link-navy:before {
+Link.hover-2.link-navy:before {
   background: var(--bs-navy);
 }
-a.hover-2.link-ash:before {
+Link.hover-2.link-ash:before {
   background: var(--bs-ash);
 }
-a.hover-2.link-white:before {
+Link.hover-2.link-white:before {
   background: var(--bs-white);
 }
-a.hover-2.link-light:before {
+Link.hover-2.link-light:before {
   background: var(--bs-light);
 }
-a.hover-2.link-gray:before {
+Link.hover-2.link-gray:before {
   background: var(--bs-gray);
 }
-a.hover-2.link-dark:before {
+Link.hover-2.link-dark:before {
   background: var(--bs-dark);
 }
-a.hover-2.link-primary:before {
+Link.hover-2.link-primary:before {
   background: var(--bs-primary);
 }
-a.hover-3.link-primary:before {
+Link.hover-3.link-primary:before {
   background-color: var(--bs-pale-primary);
 }
-a.hover-3.link-blue:before {
+Link.hover-3.link-blue:before {
   background-color: var(--bs-pale-blue);
 }
-a.hover-3.link-sky:before {
+Link.hover-3.link-sky:before {
   background-color: var(--bs-pale-sky);
 }
-a.hover-3.link-purple:before {
+Link.hover-3.link-purple:before {
   background-color: var(--bs-pale-purple);
 }
-a.hover-3.link-grape:before {
+Link.hover-3.link-grape:before {
   background-color: var(--bs-pale-grape);
 }
-a.hover-3.link-violet:before {
+Link.hover-3.link-violet:before {
   background-color: var(--bs-pale-violet);
 }
-a.hover-3.link-pink:before {
+Link.hover-3.link-pink:before {
   background-color: var(--bs-pale-pink);
 }
-a.hover-3.link-fuchsia:before {
+Link.hover-3.link-fuchsia:before {
   background-color: var(--bs-pale-fuchsia);
 }
-a.hover-3.link-red:before {
+Link.hover-3.link-red:before {
   background-color: var(--bs-pale-red);
 }
-a.hover-3.link-orange:before {
+Link.hover-3.link-orange:before {
   background-color: var(--bs-pale-orange);
 }
-a.hover-3.link-yellow:before {
+Link.hover-3.link-yellow:before {
   background-color: var(--bs-pale-yellow);
 }
-a.hover-3.link-green:before {
+Link.hover-3.link-green:before {
   background-color: var(--bs-pale-green);
 }
-a.hover-3.link-leaf:before {
+Link.hover-3.link-leaf:before {
   background-color: var(--bs-pale-leaf);
 }
-a.hover-3.link-aqua:before {
+Link.hover-3.link-aqua:before {
   background-color: var(--bs-pale-aqua);
 }
-a.hover-3.link-navy:before {
+Link.hover-3.link-navy:before {
   background-color: var(--bs-pale-navy);
 }
-a.hover-3.link-dark:before {
+Link.hover-3.link-dark:before {
   background-color: var(--bs-pale-dark);
 }
-a.hover-3.link-ash:before {
+Link.hover-3.link-ash:before {
   background-color: var(--bs-pale-ash);
 }
-.text-reset a {
+.text-reset Link {
   color: inherit !important;
 }
 .link-dark:hover,
-a.text-reset:hover,
-.text-reset a:hover {
+Link.text-reset:hover,
+.text-reset Link:hover {
   color: var(--bs-primary) !important;
 }
 [class*=text-] .text-reset:hover {
@@ -23866,27 +23866,27 @@ a.text-reset:hover,
 }
 .text-inverse,
 .link-inverse,
-.text-inverse a:not(.btn) {
+.text-inverse Link:not(.btn) {
   color: var(--bs-white);
 }
 .bg-dark.text-inverse,
 .bg-dark.link-inverse,
-.bg-dark.text-inverse a:not(.btn):not([class*=link-]),
+.bg-dark.text-inverse Link:not(.btn):not([class*=link-]),
 .bg-navy.text-inverse,
 .bg-navy.link-inverse,
-.bg-navy.text-inverse a:not(.btn):not([class*=link-]),
-[class*=offcanvas-].text-inverse a:not(.btn):not([class*=link-]),
+.bg-navy.text-inverse Link:not(.btn):not([class*=link-]),
+[class*=offcanvas-].text-inverse Link:not(.btn):not([class*=link-]),
 .bg-navy.text-inverse .post-meta,
 .bg-dark.text-inverse .post-meta {
   color: #cacaca;
 }
-.text-inverse a:not(.btn):hover,
-.bg-dark.text-inverse a:not(.btn):not([class*=link-]):hover,
-.bg-navy.text-inverse a:not(.btn):not([class*=link-]):hover,
-[class*=offcanvas-].text-inverse a:not(.btn):not([class*=link-]):hover {
+.text-inverse Link:not(.btn):hover,
+.bg-dark.text-inverse Link:not(.btn):not([class*=link-]):hover,
+.bg-navy.text-inverse Link:not(.btn):not([class*=link-]):hover,
+[class*=offcanvas-].text-inverse Link:not(.btn):not([class*=link-]):hover {
   color: var(--bs-primary);
 }
-.text-inverse a:not(.btn):hover {
+.text-inverse Link:not(.btn):hover {
   border-color: var(--bs-primary);
 }
 .badge.bg-light {
@@ -25866,7 +25866,7 @@ blockquote.text-center.icon-top:before {
 .icon-list:not(.row) li+li {
   margin-top: 0.35rem;
 }
-.list-unstyled li a.active {
+.list-unstyled li Link.active {
   color: var(--bs-primary) !important;
 }
 .filter:not(.basic-filter) p {
@@ -25892,18 +25892,18 @@ blockquote.text-center.icon-top:before {
   vertical-align: 0.15rem;
   background: rgba(30, 34, 40, 0.2);
 }
-.filter:not(.basic-filter) ul li a {
+.filter:not(.basic-filter) ul li Link {
   cursor: pointer;
 }
-.filter:not(.basic-filter) ul li a.active,
-.filter:not(.basic-filter) ul li a:hover {
+.filter:not(.basic-filter) ul li Link.active,
+.filter:not(.basic-filter) ul li Link:hover {
   color: var(--bs-primary);
 }
 .filter:not(.basic-filter).dark-filter ul li+li:before {
   background: rgba(var(--bs-white-rgb), 0.2);
 }
-.filter:not(.basic-filter).dark-filter ul li a.active,
-.filter:not(.basic-filter).dark-filter ul li a:hover {
+.filter:not(.basic-filter).dark-filter ul li Link.active,
+.filter:not(.basic-filter).dark-filter ul li Link:hover {
   color: var(--bs-white);
 }
 .isotope-filter {
@@ -25930,11 +25930,11 @@ blockquote.text-center.icon-top:before {
   cursor: pointer;
   color: #60697b;
 }
-.filter.basic-filter ul li a.active,
+.filter.basic-filter ul li Link.active,
 .filter.basic-filter ul li a:hover {
   color: var(--bs-primary);
 }
-.filter.basic-filter.dark-filter ul li a.active,
+.filter.basic-filter.dark-filter ul li Link.active,
 .filter.basic-filter.dark-filter ul li a:hover {
   color: var(--bs-white);
 }
@@ -25975,7 +25975,7 @@ blockquote.text-center.icon-top:before {
   margin-right: 0.2rem;
   margin-bottom: 0.1rem;
 }
-.tag-list li a:before {
+.tag-list li Link:before {
   font-style: normal;
   content: "#";
   font-weight: normal;
@@ -25986,14 +25986,14 @@ blockquote.text-center.icon-top:before {
   margin-top: 0;
   margin-bottom: 0.45rem;
 }
-.widget .tag-list li a {
+.widget .tag-list li Link {
   display: flex;
   align-items: center;
 }
 .meta,
 .post-category,
 .filter:not(.basic-filter),
-.filter:not(.basic-filter) ul li a {
+.filter:not(.basic-filter) ul li Link {
   text-transform: uppercase;
   letter-spacing: 0.02rem;
   font-size: 0.7rem;
@@ -26016,10 +26016,10 @@ blockquote.text-center.icon-top:before {
 .post-meta li {
   display: inline-block;
 }
-.post-meta li a {
+.post-meta li Link {
   color: #aab0bc;
 }
-.post-meta li a:hover {
+.post-meta li Link:hover {
   color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
@@ -29155,584 +29155,584 @@ button:focus {
   transform: translateY(0);
 }
 @media (prefers-reduced-motion: reduce) {
-  .social a:not(.btn-circle) {
+  .social Link:not(.btn-circle) {
     transition: none;
   }
 }
-.social a:not(.btn-circle):hover {
+.social Link:not(.btn-circle):hover {
   transform: translateY(-0.15rem);
 }
-.social a:not(.btn-circle) i {
+.social Link:not(.btn-circle) i {
   font-size: 1rem;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=dropbox] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=dropbox] {
   color: #007bdf;
 }
-.social a.btn-circle[class*=dropbox] {
+.social Link.btn-circle[class*=dropbox] {
   color: var(--bs-white);
   background-color: #007bdf;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=dribbble] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=dribbble] {
   color: #e94d88;
 }
-.social a.btn-circle[class*=dribbble] {
+.social Link.btn-circle[class*=dribbble] {
   color: var(--bs-white);
   background-color: #e94d88;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google-drive-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google-drive-alt] {
   color: #1b9f5e;
 }
-.social a.btn-circle[class*=google-drive-alt] {
+.social Link.btn-circle[class*=google-drive-alt] {
   color: var(--bs-white);
   background-color: #1b9f5e;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-f] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-f] {
   color: #4470cf;
 }
-.social a.btn-circle[class*=facebook-f] {
+.social Link.btn-circle[class*=facebook-f] {
   color: var(--bs-white);
   background-color: #4470cf;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=instagram] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=instagram] {
   color: #d53581;
 }
-.social a.btn-circle[class*=instagram] {
+.social Link.btn-circle[class*=instagram] {
   color: var(--bs-white);
   background-color: #d53581;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=line] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=line] {
   color: #0fab10;
 }
-.social a.btn-circle[class*=line] {
+.social Link.btn-circle[class*=line] {
   color: var(--bs-white);
   background-color: #0fab10;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-messenger] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-messenger] {
   color: #007ff8;
 }
-.social a.btn-circle[class*=facebook-messenger] {
+.social Link.btn-circle[class*=facebook-messenger] {
   color: var(--bs-white);
   background-color: #007ff8;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=black-berry] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=black-berry] {
   color: #272727;
 }
-.social a.btn-circle[class*=black-berry] {
+.social Link.btn-circle[class*=black-berry] {
   color: var(--bs-white);
   background-color: #272727;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=linkedin] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=linkedin] {
   color: #3393c1;
 }
-.social a.btn-circle[class*=linkedin] {
+.social Link.btn-circle[class*=linkedin] {
   color: var(--bs-white);
   background-color: #3393c1;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=intercom] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=intercom] {
   color: #2e88f8;
 }
-.social a.btn-circle[class*=intercom] {
+.social Link.btn-circle[class*=intercom] {
   color: var(--bs-white);
   background-color: #2e88f8;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=facebook] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=facebook] {
   color: #4470cf;
 }
-.social a.btn-circle[class*=facebook] {
+.social Link.btn-circle[class*=facebook] {
   color: var(--bs-white);
   background-color: #4470cf;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=youtube] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=youtube] {
   color: #c8312b;
 }
-.social a.btn-circle[class*=youtube] {
+.social Link.btn-circle[class*=youtube] {
   color: var(--bs-white);
   background-color: #c8312b;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=apple] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=apple] {
   color: #1a1919;
 }
-.social a.btn-circle[class*=apple] {
+.social Link.btn-circle[class*=apple] {
   color: var(--bs-white);
   background-color: #1a1919;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=visual-studio] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=visual-studio] {
   color: #6b61be;
 }
-.social a.btn-circle[class*=visual-studio] {
+.social Link.btn-circle[class*=visual-studio] {
   color: var(--bs-white);
   background-color: #6b61be;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=twitter] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=twitter] {
   color: #5daed5;
 }
-.social a.btn-circle[class*=twitter] {
+.social Link.btn-circle[class*=twitter] {
   color: var(--bs-white);
   background-color: #5daed5;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-ghost] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-ghost] {
   color: #f7c31a;
 }
-.social a.btn-circle[class*=snapchat-ghost] {
+.social Link.btn-circle[class*=snapchat-ghost] {
   color: var(--bs-white);
   background-color: #f7c31a;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=slack] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=slack] {
   color: #d4135c;
 }
-.social a.btn-circle[class*=slack] {
+.social Link.btn-circle[class*=slack] {
   color: var(--bs-white);
   background-color: #d4135c;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr-square] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr-square] {
   color: #5d82a4;
 }
-.social a.btn-circle[class*=tumblr-square] {
+.social Link.btn-circle[class*=tumblr-square] {
   color: var(--bs-white);
   background-color: #5d82a4;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=medium-m] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=medium-m] {
   color: #00c364;
 }
-.social a.btn-circle[class*=medium-m] {
+.social Link.btn-circle[class*=medium-m] {
   color: var(--bs-white);
   background-color: #00c364;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr] {
   color: #5d82a4;
 }
-.social a.btn-circle[class*=tumblr] {
+.social Link.btn-circle[class*=tumblr] {
   color: var(--bs-white);
   background-color: #5d82a4;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=adobe] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=adobe] {
   color: #e61f26;
 }
-.social a.btn-circle[class*=adobe] {
+.social Link.btn-circle[class*=adobe] {
   color: var(--bs-white);
   background-color: #e61f26;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=whatsapp] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=whatsapp] {
   color: #00a859;
 }
-.social a.btn-circle[class*=whatsapp] {
+.social Link.btn-circle[class*=whatsapp] {
   color: var(--bs-white);
   background-color: #00a859;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*="500-px"] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*="500-px"] {
   color: #00a6df;
 }
-.social a.btn-circle[class*="500-px"] {
+.social Link.btn-circle[class*="500-px"] {
   color: var(--bs-white);
   background-color: #00a6df;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-square] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-square] {
   color: #f7c31a;
 }
-.social a.btn-circle[class*=snapchat-square] {
+.social Link.btn-circle[class*=snapchat-square] {
   color: var(--bs-white);
   background-color: #f7c31a;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=behance] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=behance] {
   color: #0057ff;
 }
-.social a.btn-circle[class*=behance] {
+.social Link.btn-circle[class*=behance] {
   color: var(--bs-white);
   background-color: #0057ff;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=instagram-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=instagram-alt] {
   color: #d53581;
 }
-.social a.btn-circle[class*=instagram-alt] {
+.social Link.btn-circle[class*=instagram-alt] {
   color: var(--bs-white);
   background-color: #d53581;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=github-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=github-alt] {
   color: #4073a6;
 }
-.social a.btn-circle[class*=github-alt] {
+.social Link.btn-circle[class*=github-alt] {
   color: var(--bs-white);
   background-color: #4073a6;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=linkedin-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=linkedin-alt] {
   color: #3393c1;
 }
-.social a.btn-circle[class*=linkedin-alt] {
+.social Link.btn-circle[class*=linkedin-alt] {
   color: var(--bs-white);
   background-color: #3393c1;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=slack-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=slack-alt] {
   color: #d4135c;
 }
-.social a.btn-circle[class*=slack-alt] {
+.social Link.btn-circle[class*=slack-alt] {
   color: var(--bs-white);
   background-color: #d4135c;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google] {
   color: #e44134;
 }
-.social a.btn-circle[class*=google] {
+.social Link.btn-circle[class*=google] {
   color: var(--bs-white);
   background-color: #e44134;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google-play] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google-play] {
   color: #e44134;
 }
-.social a.btn-circle[class*=google-play] {
+.social Link.btn-circle[class*=google-play] {
   color: var(--bs-white);
   background-color: #e44134;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google-drive] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google-drive] {
   color: #1b9f5e;
 }
-.social a.btn-circle[class*=google-drive] {
+.social Link.btn-circle[class*=google-drive] {
   color: var(--bs-white);
   background-color: #1b9f5e;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=vuejs-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=vuejs-alt] {
   color: #3fb37f;
 }
-.social a.btn-circle[class*=vuejs-alt] {
+.social Link.btn-circle[class*=vuejs-alt] {
   color: var(--bs-white);
   background-color: #3fb37f;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google-hangouts] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google-hangouts] {
   color: #109956;
 }
-.social a.btn-circle[class*=google-hangouts] {
+.social Link.btn-circle[class*=google-hangouts] {
   color: var(--bs-white);
   background-color: #109956;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=vuejs] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=vuejs] {
   color: #3fb37f;
 }
-.social a.btn-circle[class*=vuejs] {
+.social Link.btn-circle[class*=vuejs] {
   color: var(--bs-white);
   background-color: #3fb37f;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=java-script] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=java-script] {
   color: #f0d91d;
 }
-.social a.btn-circle[class*=java-script] {
+.social Link.btn-circle[class*=java-script] {
   color: var(--bs-white);
   background-color: #f0d91d;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=paypal] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=paypal] {
   color: #0089cc;
 }
-.social a.btn-circle[class*=paypal] {
+.social Link.btn-circle[class*=paypal] {
   color: var(--bs-white);
   background-color: #0089cc;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=reddit-alien-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=reddit-alien-alt] {
   color: #f84300;
 }
-.social a.btn-circle[class*=reddit-alien-alt] {
+.social Link.btn-circle[class*=reddit-alien-alt] {
   color: var(--bs-white);
   background-color: #f84300;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=android-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=android-alt] {
   color: #97c03d;
 }
-.social a.btn-circle[class*=android-alt] {
+.social Link.btn-circle[class*=android-alt] {
   color: var(--bs-white);
   background-color: #97c03d;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=github] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=github] {
   color: #4073a6;
 }
-.social a.btn-circle[class*=github] {
+.social Link.btn-circle[class*=github] {
   color: var(--bs-white);
   background-color: #4073a6;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=android] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=android] {
   color: #97c03d;
 }
-.social a.btn-circle[class*=android] {
+.social Link.btn-circle[class*=android] {
   color: var(--bs-white);
   background-color: #97c03d;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=amazon] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=amazon] {
   color: #f79400;
 }
-.social a.btn-circle[class*=amazon] {
+.social Link.btn-circle[class*=amazon] {
   color: var(--bs-white);
   background-color: #f79400;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=adobe-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=adobe-alt] {
   color: #e61f26;
 }
-.social a.btn-circle[class*=adobe-alt] {
+.social Link.btn-circle[class*=adobe-alt] {
   color: var(--bs-white);
   background-color: #e61f26;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=master-card] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=master-card] {
   color: #f0931d;
 }
-.social a.btn-circle[class*=master-card] {
+.social Link.btn-circle[class*=master-card] {
   color: var(--bs-white);
   background-color: #f0931d;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=opera-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=opera-alt] {
   color: #e33737;
 }
-.social a.btn-circle[class*=opera-alt] {
+.social Link.btn-circle[class*=opera-alt] {
   color: var(--bs-white);
   background-color: #e33737;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=css3-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=css3-alt] {
   color: #006db6;
 }
-.social a.btn-circle[class*=css3-alt] {
+.social Link.btn-circle[class*=css3-alt] {
   color: var(--bs-white);
   background-color: #006db6;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=opera] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=opera] {
   color: #e33737;
 }
-.social a.btn-circle[class*=opera] {
+.social Link.btn-circle[class*=opera] {
   color: var(--bs-white);
   background-color: #e33737;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=css3] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=css3] {
   color: #006db6;
 }
-.social a.btn-circle[class*=css3] {
+.social Link.btn-circle[class*=css3] {
   color: var(--bs-white);
   background-color: #006db6;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=twitter-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=twitter-alt] {
   color: #5daed5;
 }
-.social a.btn-circle[class*=twitter-alt] {
+.social Link.btn-circle[class*=twitter-alt] {
   color: var(--bs-white);
   background-color: #5daed5;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=intercom-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=intercom-alt] {
   color: #2e88f8;
 }
-.social a.btn-circle[class*=intercom-alt] {
+.social Link.btn-circle[class*=intercom-alt] {
   color: var(--bs-white);
   background-color: #2e88f8;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=swiggy] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=swiggy] {
   color: #f88a2d;
 }
-.social a.btn-circle[class*=swiggy] {
+.social Link.btn-circle[class*=swiggy] {
   color: var(--bs-white);
   background-color: #f88a2d;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=snapchat-alt] {
   color: #f7c31a;
 }
-.social a.btn-circle[class*=snapchat-alt] {
+.social Link.btn-circle[class*=snapchat-alt] {
   color: var(--bs-white);
   background-color: #f7c31a;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=tumblr-alt] {
   color: #5d82a4;
 }
-.social a.btn-circle[class*=tumblr-alt] {
+.social Link.btn-circle[class*=tumblr-alt] {
   color: var(--bs-white);
   background-color: #5d82a4;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-messenger-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=facebook-messenger-alt] {
   color: #007ff8;
 }
-.social a.btn-circle[class*=facebook-messenger-alt] {
+.social Link.btn-circle[class*=facebook-messenger-alt] {
   color: var(--bs-white);
   background-color: #007ff8;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=bitcoin-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=bitcoin-alt] {
   color: #f38633;
 }
-.social a.btn-circle[class*=bitcoin-alt] {
+.social Link.btn-circle[class*=bitcoin-alt] {
   color: var(--bs-white);
   background-color: #f38633;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=google-hangouts-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=google-hangouts-alt] {
   color: #109956;
 }
-.social a.btn-circle[class*=google-hangouts-alt] {
+.social Link.btn-circle[class*=google-hangouts-alt] {
   color: var(--bs-white);
   background-color: #109956;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=blogger] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=blogger] {
   color: #e86733;
 }
-.social a.btn-circle[class*=blogger] {
+.social Link.btn-circle[class*=blogger] {
   color: var(--bs-white);
   background-color: #e86733;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=blogger-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=blogger-alt] {
   color: #e86733;
 }
-.social a.btn-circle[class*=blogger-alt] {
+.social Link.btn-circle[class*=blogger-alt] {
   color: var(--bs-white);
   background-color: #e86733;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=bitcoin] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=bitcoin] {
   color: #f38633;
 }
-.social a.btn-circle[class*=bitcoin] {
+.social Link.btn-circle[class*=bitcoin] {
   color: var(--bs-white);
   background-color: #f38633;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=behance-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=behance-alt] {
   color: #0057ff;
 }
-.social a.btn-circle[class*=behance-alt] {
+.social Link.btn-circle[class*=behance-alt] {
   color: var(--bs-white);
   background-color: #0057ff;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=apple-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=apple-alt] {
   color: #1a1919;
 }
-.social a.btn-circle[class*=apple-alt] {
+.social Link.btn-circle[class*=apple-alt] {
   color: var(--bs-white);
   background-color: #1a1919;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=react] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=react] {
   color: #00d1f7;
 }
-.social a.btn-circle[class*=react] {
+.social Link.btn-circle[class*=react] {
   color: var(--bs-white);
   background-color: #00d1f7;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=telegram] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=telegram] {
   color: #2caef0;
 }
-.social a.btn-circle[class*=telegram] {
+.social Link.btn-circle[class*=telegram] {
   color: var(--bs-white);
   background-color: #2caef0;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=vk-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=vk-alt] {
   color: #4f7db3;
 }
-.social a.btn-circle[class*=vk-alt] {
+.social Link.btn-circle[class*=vk-alt] {
   color: var(--bs-white);
   background-color: #4f7db3;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=vk] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=vk] {
   color: #4f7db3;
 }
-.social a.btn-circle[class*=vk] {
+.social Link.btn-circle[class*=vk] {
   color: var(--bs-white);
   background-color: #4f7db3;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=skype] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=skype] {
   color: #2ebbf0;
 }
-.social a.btn-circle[class*=skype] {
+.social Link.btn-circle[class*=skype] {
   color: var(--bs-white);
   background-color: #2ebbf0;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=skype-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=skype-alt] {
   color: #2ebbf0;
 }
-.social a.btn-circle[class*=skype-alt] {
+.social Link.btn-circle[class*=skype-alt] {
   color: var(--bs-white);
   background-color: #2ebbf0;
   border-color: transparent;
 }
-.social a:not([class*=link-]):not(.btn-circle) .uil[class*=telegram-alt] {
+.social Link:not([class*=link-]):not(.btn-circle) .uil[class*=telegram-alt] {
   color: #2caef0;
 }
-.social a.btn-circle[class*=telegram-alt] {
+.social Link.btn-circle[class*=telegram-alt] {
   color: var(--bs-white);
   background-color: #2caef0;
   border-color: transparent;
 }
-.social.social-muted a:not(.btn-circle):not([class*=link-]) i {
+.social.social-muted Link:not(.btn-circle):not([class*=link-]) i {
   color: #343f52 !important;
 }
 .social.social-white a i,
-.social.social-white a:hover i,
-.navbar-dark .social.social-muted a:not(.btn-circle):not([class*=link-]) i,
-.navbar-dark .social.social-muted a:not(.btn-circle):not([class*=link-]):hover i {
+.social.social-white Link:hover i,
+.navbar-dark .social.social-muted Link:not(.btn-circle):not([class*=link-]) i,
+.navbar-dark .social.social-muted Link:not(.btn-circle):not([class*=link-]):hover i {
   color: var(--bs-white) !important;
 }
-.social>a {
+.social>Link {
   margin: 0 0.7rem 0 0;
 }
-[class*=text-end] .social>a,
-.social[class*=text-end]>a {
+[class*=text-end] .social>Link,
+.social[class*=text-end]>Link {
   margin: 0 0 0 0.7rem;
 }
 @media (min-width: 768px) {
-  [class*=text-md-end] .social>a,
-  .social[class*=text-md-end]>a {
+  [class*=text-md-end] .social>Link,
+  .social[class*=text-md-end]>Link {
     margin: 0 0 0 0.7rem;
   }
 }
-.text-center .social>a,
-.social.text-center>a {
+.text-center .social>Link,
+.social.text-center>Link {
   margin: 0 0.35rem;
 }
 .badge-lg {

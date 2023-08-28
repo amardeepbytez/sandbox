@@ -270,6 +270,7 @@ var theme = {
     for(var i = 0; i < bg.length; i++) {
       var url = bg[i].getAttribute('data-image-src');
       bg[i].style.backgroundImage = "url('" + url + "')";
+      console.log("runned first")
     }
   },
   /**

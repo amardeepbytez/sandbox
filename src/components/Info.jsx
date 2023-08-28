@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Info = () => {
+  // useEffect(() => {
+  //   var theme = {
+  //     init: function() {
+  //       theme.counterUp();
+  //     },
+  //     counterUp: () => {
+  //       var counterUp = window.counterUp["default"];
+  //       const counters = document.querySelectorAll(".counter");
+  //       counters.forEach(el => {
+  //         new Waypoint({
+  //           element: el,
+  //           handler: function() {
+  //             counterUp(el, {
+  //               duration: 1000,
+  //               delay: 50
+  //             })
+  //             this.destroy()
+  //           },
+  //           offset: 'bottom-in-view',
+  //         })
+  //       });
+  //     },
+  //   }
+  //   theme.init();
+  // })
   return (
     <section className="wrapper bg-soft-primary angled lower-start">
       <div className="container py-14 py-md-16">
