@@ -1,31 +1,52 @@
 import React, { useEffect } from 'react'
+import counterUp from 'counterup2'
+import SVGInject from "@iconfu/svg-inject/dist/svg-inject.min.js";
+
+// import Waypoint from 'waypoints/lib/noframework.waypoints';
+// import 'waypoints/lib/noframework.waypoints.min.js';
 
 const Info = () => {
-  // useEffect(() => {
-  //   var theme = {
-  //     init: function() {
-  //       theme.counterUp();
-  //     },
-  //     counterUp: () => {
-  //       var counterUp = window.counterUp["default"];
-  //       const counters = document.querySelectorAll(".counter");
-  //       counters.forEach(el => {
-  //         new Waypoint({
-  //           element: el,
-  //           handler: function() {
-  //             counterUp(el, {
-  //               duration: 1000,
-  //               delay: 50
-  //             })
-  //             this.destroy()
-  //           },
-  //           offset: 'bottom-in-view',
-  //         })
-  //       });
-  //     },
-  //   }
-  //   theme.init();
-  // })
+  useEffect(() => {
+    const setupCounters = () => {
+      // var counterUpFn = window.counterUp["default"];
+      const counters = document.querySelectorAll(".counter");
+      counters.forEach(el => {
+        new Waypoint({
+          element: el,
+          handler: function() {
+            counterUp(el, {
+              duration: 1000,
+              delay: 50
+            });
+            this.destroy();
+          },
+          offset: 'bottom-in-view',
+        });
+      });
+    }
+    setupCounters();
+  }, [])
+  useEffect(() => {
+    var theme = {
+      init: function() {
+        theme.svgInject();
+      },
+      svgInject: () => {
+        SVGInject.setOptions({
+          onFail: function(img, svg) {
+            img.classList.remove('svg-inject');
+          }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          SVGInject(document.querySelectorAll('img.svg-inject'), {
+            useCache: true
+          });
+        });
+      },
+    }
+    theme.init();
+  })
+
   return (
     <section className="wrapper bg-soft-primary angled lower-start">
       <div className="container py-14 py-md-16">

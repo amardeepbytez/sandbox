@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import SVGInject from "@iconfu/svg-inject";
 
 const Contact = () => {
+  useEffect(() => {
+    var theme = {
+      init: function() {
+        theme.svgInject();
+      },
+      svgInject: () => {
+        SVGInject.setOptions({
+          onFail: function(img, svg) {
+            img.classList.remove('svg-inject');
+          }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          SVGInject(document.querySelectorAll('img.svg-inject'), {
+            useCache: true
+          });
+        });
+      },
+    }
+    theme.init();
+  })
   return (
     <section className="wrapper bg-light">
       <div className="container pt-19 pb-14 pt-md-20 pb-md-16">

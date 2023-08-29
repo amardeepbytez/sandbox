@@ -5557,9 +5557,9 @@ fieldset:disabled .btn {
   padding-bottom: 1.2rem;
   color: var(--bs-navbar-color);
 }
-.navbar-text a,
-.navbar-text a:hover,
-.navbar-text a:focus {
+.navbar-text Link,
+.navbar-text Link:hover,
+.navbar-text Link:focus {
   color: var(--bs-navbar-active-color);
 }
 .navbar-collapse {
@@ -25926,16 +25926,16 @@ blockquote.text-center.icon-top:before {
   display: inline;
   margin-right: 1rem;
 }
-.filter.basic-filter ul li a {
+.filter.basic-filter ul li Link {
   cursor: pointer;
   color: #60697b;
 }
 .filter.basic-filter ul li Link.active,
-.filter.basic-filter ul li a:hover {
+.filter.basic-filter ul li Link:hover {
   color: var(--bs-primary);
 }
 .filter.basic-filter.dark-filter ul li Link.active,
-.filter.basic-filter.dark-filter ul li a:hover {
+.filter.basic-filter.dark-filter ul li Link:hover {
   color: var(--bs-white);
 }
 .image-list {
@@ -29149,7 +29149,7 @@ button:focus {
 .navbar .btn-group-sm>.btn {
   font-size: 0.8rem;
 }
-.social a:not(.btn-circle) {
+.social Link:not(.btn-circle) {
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
   transform: translateY(0);
@@ -32282,10 +32282,10 @@ button.hamburger span {
   display: flex;
   color: #60697b;
 }
-.breadcrumb-item a {
+.breadcrumb-item Link {
   color: inherit;
 }
-.breadcrumb-item a:hover {
+.breadcrumb-item Link:hover {
   color: var(--bs-primary);
 }
 .breadcrumb-item+.breadcrumb-item {
@@ -32306,10 +32306,10 @@ button.hamburger span {
 .breadcrumb.text-white .breadcrumb-item.active {
   color: var(--bs-white);
 }
-.breadcrumb.text-white .breadcrumb-item a {
+.breadcrumb.text-white .breadcrumb-item Link {
   color: var(--bs-white);
 }
-.breadcrumb.text-white .breadcrumb-item a:hover {
+.breadcrumb.text-white .breadcrumb-item Link:hover {
   border-color: var(--bs-white);
 }
 .breadcrumb.text-white .breadcrumb-item+.breadcrumb-item::before {
@@ -33304,7 +33304,7 @@ button.hamburger span {
   padding: 0;
   margin-right: -0.5rem;
 }
-.offcanvas-header a:focus {
+.offcanvas-header Link:focus {
   outline: 0;
 }
 .offcanvas-body {
@@ -33329,9 +33329,9 @@ button.hamburger span {
   margin-top: auto;
   padding: 1.5rem 0;
 }
-img.svg-inject {
+/* img.svg-inject {
   visibility: hidden;
-}
+} */
 .icon-svg,
 .icon-svg.icon-svg-lg {
   width: 3rem;
@@ -39608,7 +39608,3 @@ footer.bg-dark.angled.upper-start:before {
     position: relative;
   }
 }
-
-/* .backbg {
-  background-image: url("../img/photos/b7.jpg");
-} */

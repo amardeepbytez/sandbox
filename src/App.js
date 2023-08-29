@@ -1,6 +1,6 @@
 import React from "react";
 import Topbar from "./components/Topbar";
-import Swiper from "./components/Swiper";
+import Swipe from "./components/Swipe";
 import About from "./components/About";
 import Reviews from "./components/Reviews";
 import Team from "./components/Team"
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="content-wrapper">
       <Topbar />
-      <Swiper />
+      <Swipe />
       <About />
       <Reviews />
       <Team />
