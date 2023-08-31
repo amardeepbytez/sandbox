@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Progressbar = () => {
+const PageProgress = () => {
   useEffect(() => {
     const theme = {
       init: function() {
@@ -57,4 +57,4 @@ const Progressbar = () => {
   );
 };
 
-export default Progressbar;
+export default PageProgress;

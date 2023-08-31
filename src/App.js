@@ -8,7 +8,7 @@ import Info from "./components/Info";
 import Contact from "./components/Contact";
 import Join from "./components/Join";
 import Footer from "./components/Footer";
-import Progressbar from "./components/Progressbar";
+import PageProgress from "./components/PageProgress"
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Contact />
       <Join />
       <Footer />
-      <Progressbar />
+      <PageProgress />
     </div>
   );
 }

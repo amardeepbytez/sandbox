@@ -11,11 +11,11 @@ const Footer = () => {
             <img className="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
             <p className="mb-4">© 2023 Sandbox. All rights reserved.</p>
             <nav className="nav social social-white">
-              <Link to="/"><i className="uil uil-twitter"></i></Link>
-              <Link to="/"><i className="uil uil-facebook-f"></i></Link>
-              <Link to="/"><i className="uil uil-dribbble"></i></Link>
-              <Link to="/"><i className="uil uil-instagram"></i></Link>
-              <Link to="/"><i className="uil uil-youtube"></i></Link>
+              <Link className='social-white-Link' to="/"><i className="uil uil-twitter"></i></Link>
+              <Link className='social-white-Link' to="/"><i className="uil uil-facebook-f"></i></Link>
+              <Link className='social-white-Link' to="/"><i className="uil uil-dribbble"></i></Link>
+              <Link className='social-white-Link' to="/"><i className="uil uil-instagram"></i></Link>
+              <Link className='social-white-Link' to="/"><i className="uil uil-youtube"></i></Link>
             </nav>
           </div>
         </div>

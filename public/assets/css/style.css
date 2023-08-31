@@ -397,7 +397,8 @@ sup {
 
 
 a {
-  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  /* color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)); */
+  color: #cacaca;
   text-decoration: none;
 }
 a:hover {
@@ -29712,14 +29713,17 @@ button:focus {
 .social.social-muted Link:not(.btn-circle):not([class*=link-]) i {
   color: #343f52 !important;
 }
-.social.social-white a i,
+.social.social-white Link i,
 .social.social-white Link:hover i,
 .navbar-dark .social.social-muted Link:not(.btn-circle):not([class*=link-]) i,
 .navbar-dark .social.social-muted Link:not(.btn-circle):not([class*=link-]):hover i {
   color: var(--bs-white) !important;
 }
 .social>Link {
-  margin: 0 0.7rem 0 0;
+  margin: 0 0.7rem 0 0 !important;
+}
+.social-white-Link {
+  margin: 0 0.7rem 0 0 !important;
 }
 [class*=text-end] .social>Link,
 .social[class*=text-end]>Link {
