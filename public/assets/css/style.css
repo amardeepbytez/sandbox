@@ -397,8 +397,7 @@ sup {
 
 
 a {
-  /* color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)); */
-  color: #cacaca;
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: none;
 }
 a:hover {
@@ -23873,6 +23872,7 @@ Link.text-reset:hover,
 .bg-dark.text-inverse,
 .bg-dark.link-inverse,
 .bg-dark.text-inverse Link:not(.btn):not([class*=link-]),
+.bg-dark.text-inverse a:not(.btn):not([class*=link-]),
 .bg-navy.text-inverse,
 .bg-navy.link-inverse,
 .bg-navy.text-inverse Link:not(.btn):not([class*=link-]),
@@ -23883,6 +23883,7 @@ Link.text-reset:hover,
 }
 .text-inverse Link:not(.btn):hover,
 .bg-dark.text-inverse Link:not(.btn):not([class*=link-]):hover,
+.bg-dark.text-inverse a:not(.btn):not([class*=link-]):hover,
 .bg-navy.text-inverse Link:not(.btn):not([class*=link-]):hover,
 [class*=offcanvas-].text-inverse Link:not(.btn):not([class*=link-]):hover {
   color: var(--bs-primary);
@@ -29155,8 +29156,16 @@ button:focus {
   transition: all 0.2s ease-in-out;
   transform: translateY(0);
 }
+.social a:not(.btn-circle) {
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+}
 @media (prefers-reduced-motion: reduce) {
   .social Link:not(.btn-circle) {
+    transition: none;
+  }
+  .social a:not(.btn-circle) {
     transition: none;
   }
 }
@@ -29164,6 +29173,12 @@ button:focus {
   transform: translateY(-0.15rem);
 }
 .social Link:not(.btn-circle) i {
+  font-size: 1rem;
+}
+.social a:not(.btn-circle):hover {
+  transform: translateY(-0.15rem);
+}
+.social a:not(.btn-circle) i {
   font-size: 1rem;
 }
 .social Link:not([class*=link-]):not(.btn-circle) .uil[class*=dropbox] {
@@ -29175,6 +29190,9 @@ button:focus {
   border-color: transparent;
 }
 .social Link:not([class*=link-]):not(.btn-circle) .uil[class*=dribbble] {
+  color: #e94d88;
+}
+.social a:not([class*=link-]):not(.btn-circle) .uil[class*=dribbble] {
   color: #e94d88;
 }
 .social Link.btn-circle[class*=dribbble] {
@@ -29249,6 +29267,9 @@ button:focus {
 .social Link:not([class*=link-]):not(.btn-circle) .uil[class*=facebook] {
   color: #4470cf;
 }
+.social a:not([class*=link-]):not(.btn-circle) .uil[class*=facebook] {
+  color: #4470cf;
+}
 .social Link.btn-circle[class*=facebook] {
   color: var(--bs-white);
   background-color: #4470cf;
@@ -29279,6 +29300,9 @@ button:focus {
   border-color: transparent;
 }
 .social Link:not([class*=link-]):not(.btn-circle) .uil[class*=twitter] {
+  color: #5daed5;
+}
+.social a:not([class*=link-]):not(.btn-circle) .uil[class*=twitter] {
   color: #5daed5;
 }
 .social Link.btn-circle[class*=twitter] {
@@ -29720,6 +29744,9 @@ button:focus {
   color: var(--bs-white) !important;
 }
 .social>Link {
+  margin: 0 0.7rem 0 0 !important;
+}
+.social>a {
   margin: 0 0.7rem 0 0 !important;
 }
 .social-white-Link {

@@ -1536,9 +1536,7 @@ const Topbar = () => {
           </div>
           {/* <!-- /.navbar-other --> */}
         </div>
-        {/* <!-- /.container --> */}
       </nav>
-      {/* <!-- /.navbar --> */}
       <div
         className="offcanvas offcanvas-end text-inverse"
         id="offcanvas-info"
@@ -1614,7 +1612,6 @@ const Topbar = () => {
         </div>
         {/* <!-- /.offcanvas-body --> */}
       </div>
-      {/* <!-- /.offcanvas --> */}
       <div
         className="offcanvas offcanvas-top bg-light"
         id="offcanvas-search"
@@ -1639,7 +1636,6 @@ const Topbar = () => {
         </div>
         {/* <!-- /.container --> */}
       </div>
-      {/* <!-- /.offcanvas --> */}
     </header>
   );
 };
