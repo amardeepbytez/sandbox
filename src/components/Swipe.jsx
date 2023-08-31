@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swiper from 'swiper/bundle'
+import "swiper/css"
+import 'swiper/swiper-bundle.css';
+
 
 const Swipe = () => {
   useEffect(() => {
@@ -14,11 +17,11 @@ const Swipe = () => {
         for (var i = 0; i < bg.length; i++) {
           var url = bg[i].getAttribute("data-image-src");
           bg[i].style.backgroundImage = "url('" + url + "')";
-          console.log("runned first");
         }
       },
       swiperSlider: function() {
         var carousel = document.querySelectorAll('.swiper-container');
+        console.log(carousel)
         for(var i = 0; i < carousel.length; i++) {
           var slider1 = carousel[i];
           slider1.classList.add('swiper-container-' + i);

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Headhesive from "headhesive";
 import { Link } from "react-router-dom";
+import 'bootstrap';
 
 const Topbar = () => {
   const navbarRef = useRef(null);
@@ -31,6 +32,39 @@ const Topbar = () => {
       banner.destroy();
     };
   }, []);
+
+  useEffect(() => {
+    const CLASS_NAME = 'has-child-dropdown-show';
+
+    const modifyDropdownBehavior = () => {
+      const originalToggle = window.bootstrap.Dropdown.prototype.toggle;
+
+      window.bootstrap.Dropdown.prototype.toggle = function () {
+        document.querySelectorAll('.' + CLASS_NAME).forEach(e => {
+          e.classList.remove(CLASS_NAME);
+        });
+
+        let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+        for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+          dd.classList.add(CLASS_NAME);
+        }
+
+        return originalToggle.call(this);
+      };
+
+      document.querySelectorAll('.dropdown').forEach(dd => {
+        dd.addEventListener('hide.bs.dropdown', function (e) {
+          if (this.classList.contains(CLASS_NAME)) {
+            this.classList.remove(CLASS_NAME);
+            e.preventDefault();
+          }
+          e.stopPropagation();
+        });
+      });
+    };
+
+    modifyDropdownBehavior();
+  })
   return (
     <header className="wrapper bg-soft-primary">
       <nav

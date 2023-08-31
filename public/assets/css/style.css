@@ -39639,3 +39639,11 @@ footer.bg-dark.angled.upper-start:before {
     position: relative;
   }
 }
+
+.lineal-stroke {
+  fill: #36496d;
+}
+
+.text-primary .lineal-fill {
+  fill: var(--bs-icon-fill-primary);
+}
