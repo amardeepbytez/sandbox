@@ -3787,7 +3787,7 @@ print {
   flex-direction: column;
   max-width: 100%;
   margin: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .glightbox-container .ginner-container.gvideo-container {
   width: 100%;
@@ -4040,9 +4040,9 @@ print {
 .glightbox-desc {
   display: none !important;
 }
-.glightbox-open {
+/* .glightbox-open {
   //overflow: hidden;
-}
+} */
 .gloader {
   height: 25px;
   width: 25px;
@@ -4524,7 +4524,6 @@ iframe.wait-autoplay {
  * Plyr v3.7.2
  * https://github.com/sampotts/plyr
  */
-/* @charset "UTF-8"; */
 @keyframes plyr-progress {
   to {
     background-position: 25px 0;
@@ -4698,15 +4697,15 @@ iframe.wait-autoplay {
   outline: var(--plyr-tab-focus-color, var(--plyr-color-main, var(--plyr-color-main, #00b2ff))) dotted 3px;
   outline-offset: 2px
 }
-Link.plyr__control {
+a.plyr__control {
   text-decoration: none
 }
 .plyr__control.plyr__control--pressed .icon--not-pressed,
 .plyr__control.plyr__control--pressed .label--not-pressed,
 .plyr__control:not(.plyr__control--pressed) .icon--pressed,
 .plyr__control:not(.plyr__control--pressed) .label--pressed,
-Link.plyr__control:after,
-Link.plyr__control:before {
+a.plyr__control:after,
+a.plyr__control:before {
   display: none
 }
 .plyr--full-ui ::-webkit-media-controls {

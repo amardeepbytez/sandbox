@@ -12,6 +12,7 @@
     "counterup2": "^2.0.2",
     "headhesive": "^1.2.4",
     "jquery": "^3.7.1",
+    "plyr": "^3.7.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.15.0",

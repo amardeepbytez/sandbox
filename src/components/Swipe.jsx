@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swiper from 'swiper/bundle'
 import "swiper/css"
-import 'swiper/swiper-bundle.css';
-
+import 'swiper/css/bundle';
+import Plyr from 'plyr';
 
 const Swipe = () => {
   useEffect(() => {
@@ -11,6 +11,7 @@ const Swipe = () => {
       init: function () {
         theme.backgroundImage();
         theme.swiperSlider();
+        theme.plyr();
       },
       backgroundImage: () => {
         var bg = document.querySelectorAll(".bg-image");
@@ -156,6 +157,13 @@ const Swipe = () => {
           });
         }
       },
+      plyr: () => {
+        var players = Plyr.setup('.player', {
+          loadSprite: true,
+          fullscreen: { enabled: true, iosNative: true },
+          muted: false
+        });
+      },
     };
     theme.init();
   });
@@ -213,7 +221,7 @@ const Swipe = () => {
                     </p>
                     <div className="animate__animated animate__slideInUp animate__delay-3s">
                       <Link
-                        href="./assets/media/movie.mp4"
+                        to="./assets/media/movie.mp4"
                         className="btn btn-circle btn-white btn-play ripple mx-auto mb-5"
                         data-glightbox
                       >
